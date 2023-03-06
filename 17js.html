@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id  = "heading" class="headdddd  thuoir   rjikr">tutorial  17</h1>
+    <h2>event & event   object</h2>
+
+
+    <script>
+
+    document.getElementById("heading").addEventListener("click",function (e) {  
+        let  vari;
+
+//   console.log("you have clicked the heading")
+//   location.href = "https://www.google.com/maps"
+console.log(e)
+
+vari = e.target
+vari = e.target.className
+vari  =  e.target.id
+// vari = Array.from(e.target.classList)   
+vari  = e. target .classList
+// vari  = e.offsetX
+// vari  = e.offsetY
+vari = e.clientX
+vari = e.clientY
+
+  console.log(vari)
+
+
+    });
+
+    
+
+
+    </script>
+    
+</body>
+</html>

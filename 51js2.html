@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const Iterable = {
+            [Symbol.iterator]() {
+                // console.log(Symbol.iterator);
+                // console.log("inside Symbol.iterator");
+                let step = 0;
+                const iterator = {
+                    next() {
+                        console.log("insede next");
+                        step++;
+                        switch (step) {
+                            case 1:
+                                return { value: 'Example', done: 'false' }
+                            default:
+                                break;
+                        }
+                        // if (step === 1)
+                        //     return "return data"
+                        //     // return { value: 'Example', done: 'false' }
+                        // else if (step === 2)
+                        //     return { value: 'for', done: 'false' }
+                        // else if (step === 3)
+                        //     return { value: 'Iterator', done: 'false' }
+                        // return { value: undefined, done: 'true' }
+                    }
+                };
+                return iterator;
+            }
+        }
+        console.log(Iterable);
+        var iterator = Iterable[Symbol.iterator]();
+        console.log(iterator);
+        // console.log(iterator.next());
+        var dataIte = iterator.next();
+        var dataIte = iterator.next();
+        console.log("dataIte",dataIte);
+        // console.log("dataIte",dataIte.data1);
+
+        // console.log(iterator.next());
+        // console.log(iterator.next());
+        // console.log(iterator.next());
+        // console.log(iterator.next());
+        // iterator.next() // {value: 'Example', done: 'false'}
+        // iterator.next() // {value: 'for', done: 'false'}
+        // iterator.next() // {value: 'iterator', done: 'false'}
+        // iterator.next() // {value: undefined, done: 'false'}
+    </script>
+</body>
+
+</html>

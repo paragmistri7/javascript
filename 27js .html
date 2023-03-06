@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tutorial 27</h1>
+    <h2>object literals , constructer and object oriented</h2>
+
+    <script>
+
+        // 1. object literals 
+
+        // let car = {
+        //     name : 'maruti',
+        //     speed : 120,
+        //     run : function jkm() {
+        //         console.log('car is running')
+        //     }
+        // } 
+        // console.log(car.run()) 
+
+
+        //  2. constructor 
+
+        function gencar(name ,  speed) {
+                this.a = name;
+                this.b = speed;
+               this. run = function(){
+                    console.log(`${this.a} is running and that speed ${ this.b }`)
+                }
+                this.anal = function(){
+                    console.log(`this car is slower by ${200 - this.b} Km/H than mercedes`)
+                }
+        }
+    car1 = new gencar('nissan', 150);
+    car2  = new gencar('verna' , 180 );
+
+    console.log(car1.anal())
+
+
+
+    </script>
+</body>
+</html>

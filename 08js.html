@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tutorial 08</h1>
+     <h2>if  else condition    &  switches</h2>
+
+     <script>
+
+        const age=  25
+        const age1 = 55
+
+    //   ==   only value  compare
+    //   ===    value & type  compare
+    //   ypu choose  ===  &  not  match type, so show last else condition 
+         
+    //    ex.  age = '25'  string
+    //         age =  25   number        
+
+     if (age == 25){
+        console.log('you are bad')
+     }
+
+     else if (age1 == 55) {
+        console.log('you are very very bad')
+
+     }
+     else{
+        console.log('you are not bad')
+     }
+
+
+
+     
+      
+     if (age1 == '25'){
+        console.log('you are bad')
+     }
+
+     else if (age1 == '55') {
+        console.log('you are very very bad')
+
+     }
+     else{
+        console.log('you are not bad')
+     }
+
+
+
+      
+     if (age1 == '25'){
+        console.log('you are bad')
+     }
+
+     else if (age1 === '55') {
+        console.log('you are very very bad')
+
+     }
+     else{
+        console.log('you are not bad')
+     }
+
+
+    //    !=  reverse 
+
+
+     if (age1 != '55'){
+        console.log('you are bad')
+     }
+
+     else if (age1 != 55) {
+        console.log('you are very very bad')
+
+     }
+     else{
+        console.log('you are not bad')
+     }
+
+
+//   type change so  show that condition
+            // age1 !==  55   &   '55'(show  that reverse condition )
+
+
+     if (age1 !== 55){
+        console.log('you are bad')
+     }
+
+     else if (age1 !== '55') {
+        console.log('you are very very bad')
+
+     }
+     else{
+        console.log('you are not bad')
+     }
+
+
+
+    //  how  to check varible  
+
+  const age2 = 25
+
+
+     if  (typeof age2 !== 'undefined'){
+        console.log('this is defind')
+     }
+     else {
+        console.log('what is this')
+     }
+
+
+
+    //  const drive = false;
+     const drive = true;
+
+    const age3 = 15
+
+
+     if(drive){
+        console.log( 'you drive')
+     }
+     else {
+        console.log('you can  not  drive')
+     }
+
+
+     
+
+    //  && =  all condition  ok  so show   if  either else  
+
+     if(drive && age3>12){
+        console.log( 'you drive')
+     }
+     else {
+        console.log('you can  not  drive')
+     }
+
+
+
+    //  ||  = anyone  condition ok   so show  if   either   else 
+     
+
+
+    if(drive || age3>17){
+        console.log( 'you drive')
+     }
+     else {
+        console.log('you can  not  drive')
+     }
+
+     
+    //  ternary operator 
+
+    const  age6 = 55
+
+console.log(age6==55?   'age is  55' : 'age is not that')
+
+console.log(age6!=55?   'age is  55' : 'age is not that')
+
+
+
+// switch case  syerstem
+
+const age7 = 20
+
+switch (age7) {
+    case 15:console.log( 'your age  is 15')
+        break;
+    case 20:console.log( 'your age  is 20')
+        // break;
+    case 25:console.log( 'your age  is 25')
+        break;
+    case 30:console.log( 'your age  is 30')
+        // break;
+
+    default:console.log( 'you are not selected')
+        break;
+}
+
+
+
+     </script>
+</body>
+</html>

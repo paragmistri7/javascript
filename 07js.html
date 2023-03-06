@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>tutorial 07</h1>
+
+    <h2>arrays</h2>
+    <script>
+        let marks = [45, 52, 5, 56, 54, 45];
+        const fruits = ['orange', 'apple', 'banana'];
+        const mix = ['str', 45, 58, 44, 55]
+
+        const arr = new Array(23, 55, 85, 36, 'goll')
+
+
+        // console.log(arr[1])
+        // array start  = 0 1 2 3    aar 1  = 55
+
+        // console.log(arr.length)
+        // count element
+
+        // console.log(Array.isArray(arr))
+        // find  array in body
+
+        // arr [3] =  'pf'
+        // console.log(arr)
+        // change array 
+
+        // let value = marks.indexOf(56)
+        // console.log(value)
+        //  show element in which number
+
+
+        // mutating  or  modifying arraays
+
+        let marks2 = [78, 99, 96, 95, 94]
+
+
+        marks.push(1, 11, 22, 33, 44)
+        console.log(marks)
+        // add element in last
+
+        marks = marks.concat(marks2)
+        console.log(marks)
+        //  add name in last 
+
+        marks.unshift(1200)
+        console.log(marks)
+        // aad  element first 
+
+        marks.pop()
+        console.log(marks)
+        // remove  last  element 
+
+        marks.shift()
+        console.log(marks)
+        // remove  first  element 
+
+        marks.splice(1, 5)
+        console.log(marks)
+        // remove  any element 
+
+        marks.reverse()
+        console.log(marks)
+
+
+        // object  write in {}
+
+        let obj = {
+            'name 1': 'parag',
+            name2: 'hardik',
+            name3: 45,
+            name4: true,
+            name5: ['pkpkpk'],
+            name6: [1, 2, 3, 45, 5]
+
+        }
+console.log(obj.name4)
+
+    obj.name4 =  1200
+        console.log(obj['name 1'])
+console.log(obj.name4)
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

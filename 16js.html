@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>tutorial 1 6</h1>
+    <h2> creating & remove element </h2>
+
+    <a href="https://www.facebook.com/"> facebook</a>
+    <div id="game" class="container">
+        <div class="box" id="one"> box 1</div>
+        <div class="box" id="two"> box 2</div>
+        <div class="box" id="three">
+            <p>Lorem ipsum dolor sit amet.</p> box 3
+            <ul class = 'goom'>
+                <li  class="that">1234456</li>
+                <li>1234456</li>
+                <li>1234456</li>
+                <li>1234456</li>
+                <li>1234456</li>
+                <li>1234456</li>
+            </ul>
+        </div>
+        <div class="box" id="four"> box 4</div>
+    </div>
+
+
+    <form action="">
+        <label for="">search here</label> <input type="search">
+        <input type="submit">
+    </form>
+    <a href="https://developer.mozilla.org/en-US/">MDN</a>
+
+    <script>
+
+        let
+        element = document.createElement('li');
+        
+
+       element.className = "box";
+       element.id = "games";
+        element.setAttribute('title', 'my title');
+        element.innerHTML = '<b> this is  a new created </b>'
+
+
+        console.log(element);
+
+        let gk = document.querySelector('ul.goom')
+        gk.appendChild(element)
+
+        console.log(gk)
+
+ let repl = document.createElement('h3')
+
+ repl.id = "red";
+ repl.className ="red"
+
+ console.log(repl)
+
+ let text = document.createTextNode("whop are  youy");
+ red.appendChild(text)
+
+
+ element.replacewith(repl)
+
+
+
+
+    </script>
+</body>
+
+</html>

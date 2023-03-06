@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tutorial 06</h1>
+    <h2> string </h2>
+
+    <script>
+       
+    //    const name = 'parag'  
+       const name = 'parag '  
+       //    for space   after parag
+
+       const good = 'good morning' ;
+
+     console.log(name + good)
+
+       //    for space   after parag
+     console.log(name +''+good)
+
+
+//   for write  in html 
+
+     let  sec1 = '<h1>this is a HEADING</h1> <p> whta is this<p/> '
+                   +  '<p> this ia  a para </p> '
+        sec1  = sec1.concat('where are a',' time  is a over')
+
+
+   console.log(sec1)
+   console.log(sec1.length)
+   console.log(sec1.toLocaleLowerCase())
+   console.log(sec1.toLocaleUpperCase())
+
+   console.log(sec1[5])
+   console.log(sec1.charAt(5))
+   // 5 = show only one  font = h 
+
+    console.log(sec1.indexOf('whta'))
+    // whta = start word  first
+
+    console.log(sec1.lastIndexOf('is'))
+    // is = last is index 
+
+    console.log(sec1.endsWith('r'))
+    // true
+    console.log(sec1.endsWith('j'))
+//    false 
+
+    // para s last font or word    
+
+    console.log(sec1.includes('is'))
+    // word is in      true
+    console.log(sec1.includes('its'))
+    // word is in      false
+
+    console.log(sec1.substring(5,10))
+    // select font  any 
+
+    console.log(sec1.slice(-9))
+    // last 9 word 
+    console.log(sec1.slice(8, 15))
+    
+    // substring = - not work 
+
+    console.log(sec1.split(''))
+    // show in new line
+    
+    console.log(sec1.replace('a','i'))
+    // replace first a to i
+
+
+
+
+
+    // template literal 
+    
+    let fruit1 ='orange'
+    let fruit2 = 'apple'
+
+    let  hello = `hi <h1>this"""  is a head </h1>
+                  you like  ${fruit1} and ${fruit2}`
+
+document.body.innerHTML = hello;
+
+// add html in body
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

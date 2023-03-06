@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>tutorial 05</h1>
+
+    <h2>
+        type conversion and type coercion
+    </h2>
+
+    <script>
+        // type conversion and type coercion
+
+        // conversion
+
+        let num1 = 78;
+        num1 = String(56)
+        console.log(num1, (typeof num1))
+
+        let num2 = true
+        num2 = String(true)
+        num2 = Number(true)
+        console.log(num2, (typeof num2))
+
+        let num3 = Date()
+        // num3 = String(  Date()  )
+        console.log(num3, (typeof num3))
+
+        // let array = [1,2,3,4,]
+        array = String([1, 2, 3, 4,])
+        // length
+        console.log(array.length, (typeof array))
+
+        let str = "456"
+        str = Number("456")
+        console.log(str, (typeof str))
+
+        let i = 22.022
+        console.log(i, (typeof i))
+        console.log(i.toString(), (typeof i))
+        console.log(i.toFixed(20))
+
+        let k = parseInt("45.22")
+        console.log(k, (typeof k))
+
+        let kl = parseFloat("45.32")
+        console.log(kl, (typeof kl))
+
+        let kn = Number("12.125")
+        console.log(kn, (typeof kn))
+
+
+        // coercion 
+
+
+        // let stri1 = "45"
+        let stri1 = Number("45")
+        let num9 = 22
+
+        console.log(stri1 + num9)
+    // output is string in one line
+
+
+
+    </script>
+</body>
+
+</html>

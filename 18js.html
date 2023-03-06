@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>tutorial 18</h1>
+    <h2> event</h2>
+
+
+    <a href="https://www.facebook.com/"> facebook</a>
+    <div id="game" class="container">
+        <div class="box" id="one"> box 1</div>
+        <div class="box" id="two"> box 2</div>
+        <div class="box" id="three">
+            <p>Lorem ipsum dolor sit amet.</p> box 3
+            <ul class = 'goom'>
+                <li  class="that">1234456</li>
+                <li>1234456</li>
+                <li>1234456</li>
+                <li>1234456</li>
+                <li>1234456</li>
+                <li>1234456</li>
+            </ul>
+        </div>
+        <div class="box" id="four"> box 4</div>
+    </div>
+
+
+    <form action="">
+        <label for="">search here</label> <input type="search">
+        <input id="btn" type="submit">
+        <!-- <button id ="btn">sub  now</button> -->
+    </form>
+    <a href="https://developer.mozilla.org/en-US/">MDN</a>
+
+
+
+    <script>
+
+// let btn = document.getElementById ('btn')
+
+// btn.addEventListener('click' , func1)
+// btn.addEventListener('dbclick' , func2)
+// btn.addEventListener('mousedown' , func3)
+
+
+// function func1(e) {
+//     console.log('thank ' , e)
+//     e.preventDefault()
+// }
+
+// function func2(e) {
+//     console.log('thank double' , e)
+//     e.preventDefault()
+// }
+
+// function func3(e) {
+//     console.log('mouse down' , e)
+//     e.preventDefault()
+// }
+
+
+
+document.querySelector('#two').addEventListener('mouseenter', function () {
+    console.log('you enter now')
+    
+})
+
+document.querySelector('#two').addEventListener('mouseleave', function () {
+    console.log('you exit  now')
+    
+})
+
+
+
+document.querySelector('#two').addEventListener('mousemove', function (e) {
+    document.body.style.backgroundColor = `rgb (${e.offsetX},${e.offsetX},${e.offsetY}) `
+    console.log('you move now')
+    console.log(e.offsetX , e.offsetY)
+    
+})
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        tutorial 20
+    </h1>
+    <h3>
+        local & session storage
+    </h3>
+
+    <script>
+
+
+// LOCAL  STORAGE 
+
+        // add key value in  local storage 
+
+        localStorage.setItem('name1', 'parag')
+        localStorage.setItem('name2', 'hardik') 
+        localStorage.setItem('name3', 'harnish') 
+
+        // clear local storage 
+
+        // localStorage.clear()
+
+        // cear only one  key  remove 
+
+        // localStorage.removeItem('name3')
+
+
+        // retrieve iteam from local storage    show  in console`   
+
+        let nam = localStorage.getItem('name1')
+        let nom = localStorage.getItem('name2')
+        console.log(nam ,nom)
+
+
+        let arr  =['apple','bananna','orange']
+
+        console.log(arr, (typeof arr))
+
+        localStorage.setItem('ar1' ,JSON.stringify(arr));
+
+     localStorage.getItem ('ar1')
+     console.log(arr ,(typeof arr))
+
+     JSON.parse(  localStorage.getItem ('ar1'))
+     console.log(arr, (typeof arr))
+
+// SESSION STORAGE 
+
+// local = session  (same    only name  change)
+// note ;-  after browser close local storage  is not  clear. 
+//  but session storage is  clear.
+
+    </script>
+
+</body>
+</html>
